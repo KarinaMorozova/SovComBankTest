@@ -30,7 +30,7 @@ public class Solution {
                 File.separator + "src" + File.separator + "data.txt";
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
 
-        // Список максимумов
+        // Список сумм
         List<Integer> listOfSums = new ArrayList<>();
         // Считываем данные из файла
         while (reader.ready()) {
