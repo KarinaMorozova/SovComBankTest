@@ -52,13 +52,13 @@ public class Solution {
         int globalMax = listOfSums.get(0);
         int globalMaxIndex = 0;
         for (int i = 0; i < listOfSums.size(); i++) {
-            System.out.println("Количество снега для " + (i + 1) + "-той ветки = " + listOfSums.get(i));
+            System.out.println("Количество снега для " + i + "-той ветки = " + listOfSums.get(i));
             if (globalMax < listOfSums.get(i)) {
                 globalMax = listOfSums.get(i);
                 globalMaxIndex = i;
             }
         }
-        System.out.println("Максимальное количество снега скапливается на " + (globalMaxIndex + 1)
+        System.out.println("Максимальное количество снега скапливается на " + globalMaxIndex
                 + " ветке в количестве = " + globalMax);
     }
 }
